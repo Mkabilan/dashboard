@@ -77,6 +77,9 @@
   background-color: #095f91;
 }
 
+.overflow-y:scroll{
+  background-color:transparent;
+}
   
 
       
@@ -149,7 +152,7 @@
           
           <body>
             <div class="d-flex ">
-             <div class="nebula text-nowrap position-fixed align-items-start " style="width:20%;height:auto;overflow-y:auto;">
+             <div class="nebula text-nowrap position-fixed align-items-start " style="width:20%;height:100%;overflow-y:scroll;">
               <nav>
              <header class="p-4 pt-4 pb-4 header">
                 <div class="droptown-header d-flex justify-content-between"><img src=".\bootstrap\assests\images\logo.png">
@@ -204,7 +207,7 @@
              <div class="ps-2 m-1" style="width:79%"> 
             
              <div class="row">
-             <div class="col-6 p-2  pt-2 ps-4 pb-3 "> 
+             <div class="col-6 p-2  pt-2 ps-2 pb-3 d-flex justify-content-start"> 
             <div class="btn-group bg-body-tertiary">
             <button type="button" class="btn border border-1 "><b>Design Task</b></button>
             <button type="button" class="btn border border-1 dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
@@ -220,7 +223,7 @@
           </div>
           </div>
         
-              <div class="col-6 p-2   pe-4 pb-3 d-flex justify-content-end  ">
+              <div class="col-6 p-2   pe-2 pb-3 d-flex justify-content-end  ">
          <button class="btn btn-large btn-light" style="background-color:#cad3ea ;color: #3e1b69;"><strong ><large>+</large>Add project</strong></button></id>
         </div>
         </div>
