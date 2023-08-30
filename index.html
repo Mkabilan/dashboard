@@ -85,6 +85,18 @@
   background-color:transparent;
 }
 
+.contain {
+  width:95px;
+  height:100vh;
+  overflow-y:scroll;
+  overflow-x: hidden;
+  transition: width 0.1s;
+}
+
+.contain:hover {
+  width:300px;
+}
+
 
   
 
@@ -156,10 +168,10 @@
           </aside>-->
           
           
-          <body class="body" style="height: max-content;">
+          <body class="body" style="height:auto;">
             <div class="d-flex ">
            
-            <div class="nebula text-nowrap  align-items-start " style="width:21%;height:100vh;overflow-y:scroll;overflow-x: hidden;">
+            <div class="nebula text-nowrap  align-items-start contain " >
               
               <nav>
              <header class="p-4 pt-4 pb-4 header d-flex justify-content-between">
@@ -171,7 +183,7 @@
             </header>
              <section class="justify-content-center pt-3 navbar-toggler hover">
               <!--<ul class="list-group" style="background-color:#220282;">-->
-                <li class="list-group-item nav-item text-white ps-3 pb-2 active "  style="background-color:#220282;"><a class="nav-link " href="https://getbootstrap.com/" target="_blank "><img  src=".\bootstrap\assests\images\speedometer.png" id="Dashboard" class="img-fluid p-2"><strong class="offcanvas-md" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dashboard</strong></a></li>
+                <li class="list-group-item nav-item text-white ps-3 pb-2 active text-nowrap "  style="background-color:#220282;"><a class="nav-link " href="https://getbootstrap.com/" target="_blank "><img  src=".\bootstrap\assests\images\speedometer.png" id="Dashboard" class="img-fluid p-2"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dashboard</strong></a></li>
                 <li class="list-group-item   text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\graph.png" class="img-fluid p-2"><strong class="offcanvas-md" style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Activity</strong></a></li>
                 <li class="list-group-item text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\timer_white.png" class="img-fluid p-2"><strong class="offcanvas-md" style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timesheet</strong></a></li>
                 <li class="list-group-item text-white ps-4 pb-2" style="background-color:#220282;"><hr style="width:10%;"></li>
@@ -180,7 +192,7 @@
                <li class="list-group-item text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\folder.png" class="img-fluid p-2"><strong class="offcanvas-md" style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Projects</strong></a></li>
                <li class="list-group-item text-white ps-4 pb-2" style="background-color:#220282;"><hr style="width:10%;"></li>
                <li class="list-group-item text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\help.png" class="img-fluid p-2"><strong class="offcanvas-md" style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help</strong></a></li>
-               <li class="list-group-item text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\download.png" class="img-fluid p-2"><strong class="offcanvas-md pe-4" style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Download APP</strong></a></li>
+               <li class="list-group-item text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\download.png" class="img-fluid p-2"><strong class="offcanvas-md" style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Download APP</strong></a></li>
   
                <!--</ul>-->    
                 </section>
@@ -215,7 +227,7 @@
               </div>
               
                  
-             <div class="ps-2 pe-2 " style="width:79%;overflow-x: hidden;height:100vh;"> 
+             <div class="ps-2 pe-2 " style="width:fit-content;overflow-x: hidden;height:100vh;"> 
             
              <div class="row">
              <div class="col-6 p-2  pt-2 ps-2 pb-3 d-flex justify-content-start" > 
