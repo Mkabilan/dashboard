@@ -85,20 +85,38 @@
   background-color:transparent;
 }
 
-.contain {
-  width:95px;
-  height:100vh;
-  overflow-y:scroll;
-  overflow-x: hidden;
-  transition: width 0.1s;
-}
 
-.contain:hover {
-  width:300px;
-}
-
-
+ .contain :hover{
+  background-color: #6e13de;
+ }
+ .toggle{
+  position:absolute;
+  width:40px;
+  height:40px;
+  left:50px;
+  transform:rotateY(180deg);
+  top:50px;
+  border-radius:100%;
+ }
+ .toggle.active{
   
+  width:40px;
+  height:40px;
+  left:18%;
+  top:50px;
+  border-radius:100%;
+ }
+.sidebar{
+ width:90px;
+ height:100vh;
+ overflow-y:scroll;
+ overflow-x: hidden;
+}
+ 
+.sidebar.active{
+  width:350px;
+}
+
 
       
     
@@ -169,19 +187,30 @@
           
           
           <body class="body" style="height:auto;">
+          
             <div class="d-flex ">
-           
-            <div class="nebula text-nowrap  align-items-start contain " >
-              
+            <div class="nebula text-nowrap  align-items-start sidebar"  >
+            
+          
               <nav>
-             <header class="p-4 pt-4 pb-4 header d-flex justify-content-between">
+             <header class="p-4 pt-4 pb-4 header d-flex ">
                <img src=".\bootstrap\assests\images\logo.png" >
-               
-              
+               <img src=".\bootstrap\assests\images\left_arrow.png"  class="toggle" style="border:5px solid white;border-radius:50%;background-color:white;">
+
+
+               <script>
+                const sidebar=document.querySelector('.sidebar'); 
+                document.querySelector('.toggle').onclick=function(){
+                this.classList.toggle('active');
+                sidebar.classList.toggle('active');
+
+                }
+             </script>   
+       
                
                
             </header>
-             <section class="justify-content-center pt-3 navbar-toggler hover">
+             <section class="justify-content-center pt-3 navbar-toggler contain">
               <!--<ul class="list-group" style="background-color:#220282;">-->
                 <li class="list-group-item nav-item text-white ps-3 pb-2 active text-nowrap "  style="background-color:#220282;"><a class="nav-link " href="https://getbootstrap.com/" target="_blank "><img  src=".\bootstrap\assests\images\speedometer.png" id="Dashboard" class="img-fluid p-2"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dashboard</strong></a></li>
                 <li class="list-group-item   text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\graph.png" class="img-fluid p-2"><strong class="offcanvas-md" style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Activity</strong></a></li>
@@ -222,11 +251,15 @@
                     </div>
                   </div>
                 </footer>
+            
+            
+              
+                 </nav>
+                  
                  
-                 </nav>        
               </div>
               
-                 
+                   
              <div class="ps-2 pe-2 " style="width:fit-content;overflow-x: hidden;height:100vh;"> 
             
              <div class="row">
