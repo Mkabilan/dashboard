@@ -106,6 +106,49 @@
   top:50px;
   border-radius:100%;
  }
+
+ 
+ @media(max-width:1200px){
+  .toggle.active {
+    left:22%;}
+ }
+ @media(max-width:1100px){
+  .toggle.active {
+    left:22%;}
+ }
+ @media(max-width:1000px){
+  .toggle.active {
+    left:25%;}
+ }
+
+
+  @media ( max-width: 950px) {
+  .toggle.active {
+    left:24%;
+  }}
+  @media (max-width: 820px) {
+    .toggle.active {
+        left:27%;
+    }
+}
+
+@media (max-width: 700px) {
+    .toggle.active {
+        left:27%;
+    }
+}
+
+@media (max-width: 600px ) {
+    .toggle.active {
+        left:28%;
+    }
+}
+
+@media (max-width: 400px ) {
+    .toggle.active {
+        left:30%;
+    }
+}
 .sidebar{
  width:90px;
  height:100vh;
@@ -113,11 +156,15 @@
  overflow-x: hidden;
 }
  
-.sidebar.active{
+.sidebar.active {
   width:350px;
 }
 
-
+.tooltip{
+  background-color:black;
+  color: white;
+  z-index:10;left:70px;position: fixed;width:max-content;height:20px;line-height: 10px;
+}
       
     
     
@@ -212,16 +259,23 @@
             </header>
              <section class="justify-content-center pt-3 navbar-toggler contain">
               <!--<ul class="list-group" style="background-color:#220282;">-->
-                <li class="list-group-item nav-item text-white ps-3 pb-2 active text-nowrap "  style="background-color:#220282;"><a class="nav-link " href="https://getbootstrap.com/" target="_blank "><img  src=".\bootstrap\assests\images\speedometer.png" id="Dashboard" class="img-fluid p-2"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dashboard</strong></a></li>
-                <li class="list-group-item   text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\graph.png" class="img-fluid p-2"><strong class="offcanvas-md" style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Activity</strong></a></li>
-                <li class="list-group-item text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\timer_white.png" class="img-fluid p-2"><strong class="offcanvas-md" style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timesheet</strong></a></li>
+                <li class="list-group-item text-white ps-3 pb-2 active text-nowrap "  style="background-color:#220282;"><a class="nav-link " href="https://getbootstrap.com/" target="_blank "><img  src=".\bootstrap\assests\images\speedometer.png" id="Dashboard" class="img-fluid p-2"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dashboard</strong>
+               
+                
+                
+                
+                
+                
+                </a></li>
+                <li class="list-group-item   text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\graph.png" class="img-fluid p-2"><strong  style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Activity</strong></a></li>
+                <li class="list-group-item text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\timer_white.png" class="img-fluid p-2"><strong  style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timesheet</strong></a></li>
                 <li class="list-group-item text-white ps-4 pb-2" style="background-color:#220282;"><hr style="width:10%;"></li>
-               <li class="list-group-item text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\icons8-today-96.png" class="img-fluid p-2"><strong class="offcanvas-md" style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To-Do</strong></a></li>
-               <li class="list-group-item text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\bill.png" class="img-fluid p-2"><strong class="offcanvas-md" style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invoices</strong></a></li>
-               <li class="list-group-item text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\folder.png" class="img-fluid p-2"><strong class="offcanvas-md" style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Projects</strong></a></li>
+               <li class="list-group-item text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\icons8-today-96.png" class="img-fluid p-2"><strong  style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To-Do</strong></a></li>
+               <li class="list-group-item text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\bill.png" class="img-fluid p-2"><strong  style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invoices</strong></a></li>
+               <li class="list-group-item text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\folder.png" class="img-fluid p-2"><strong  style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Projects</strong></a></li>
                <li class="list-group-item text-white ps-4 pb-2" style="background-color:#220282;"><hr style="width:10%;"></li>
-               <li class="list-group-item text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\help.png" class="img-fluid p-2"><strong class="offcanvas-md" style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help</strong></a></li>
-               <li class="list-group-item text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\download.png" class="img-fluid p-2"><strong class="offcanvas-md" style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Download APP</strong></a></li>
+               <li class="list-group-item text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\help.png" class="img-fluid p-2"><strong  style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help</strong></a></li>
+               <li class="list-group-item text-white ps-3 pb-2" style="background-color:#220282;"><a class="nav-link " href="#"><img src=".\bootstrap\assests\images\download.png" class="img-fluid p-2"><strong style="color: #afacd7;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Download APP </strong></a></li>
   
                <!--</ul>-->    
                 </section>
